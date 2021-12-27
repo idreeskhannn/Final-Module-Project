@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon" href="assets/logo/download.jfif">
+
+</head>
+
+<body>
+
+    <section class="modal fade bn" id="productModal">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+                                <div class="in">
+                                    <input type="email" placeholder="Email" id="email">
+
+                                </div>
+                                <p id="p2" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder="Password" id="pass">
+                                    <span class="fas fa-lock" onclick="show(this)"></span>
+                                </div>
+                                <p id="p3" class="p"></p>
+                                <div class="in">
+                                    <input type="password" placeholder="Re-Type Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-toggle="modal" data-target="#login">Existing User / login</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <button data-toggle="modal" data-target="#productModal"> ss</button> -->
+
+    <section class="modal  bn" id="login">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder=" Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-dismiss="modal">Create New Account / SignUp</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header>
+        <!-- <div class="h">
+            <h4> Same day deliver, order before 4pm </h4>
+        </div> -->
+        <div class="h1">
+            <h6>Want to talk to us? We are happy to serve you. (9AM to 9PM, Monday to Saturday) </h6>
+        </div>
+
+        <div>
+
+            <div>
+                <nav class="navbar navbar-expand-lg  badge-light nvc   ">
+                    <a class="navbar-brand k" href="#"><img src="assets/logo/download.jfif" id="jh" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:void(0) " onclick="home()">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript;void(0)" onclick="abt()">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="neww()">Trending</a>
+                                    <a class="dropdown-item" href="javascript:void(0)">SKIN</a>
+
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="brt()">BREATHE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="con()">Contact</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0"
+                            style="list-style: none; margin-right: 20px; font-size: 30px; cursor: pointer;">
+                            <li data-toggle="modal" data-target="#productModal"><i class="fas fa-user"></i>
+                            <li>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="sc">
+
+
+
+
+
+
+
+
+        <div id="dl">
+
+            <div id="dl1">
+                <div id="kh">
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="hh">
+            <h3>Rehan Online Pharmacy, Pakistan's Most Trusted</h3>
+        </div>
+
+
+
+
+        <section class="modal fade" id="Detail">
+            <div class="modal-dialog myModal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h6>product </h6>
+                    </header>
+                    <section class="modal-body">
+
+                        <div class="row">
+                            <section class="col-lg-6 bor">
+                                <img id="modalImg" src="" width="100%" alt="">
+                            </section>
+                            <section class="col-lg-6 bor1">
+                                <p id="modalName"></p>
+                                <p id="modalPrice"></p>
+                                <p id="modalDs"></p>
+                                <button class="btn btn-success bm   ">ADD TO CARD</button>
+                            </section>
+                        </div>
+                    </section>
+                    <footer class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-danger">close</button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <h3 id="jk">FOR SKIN</h3>
+
+
+            <div class="row">
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn1.jpg" alt="">
+                                <h2 class="pp">BBP Skin Ointment</h2>
+                                <h5 class="pp1">PRICE : 100 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">BBP Skin Ointment/h2>
+                                    <h5 class="p1">PRICE : 350 PKR</h5>
+
+
+                                    <p class="des">
+                                        Bangalore Bio-Plasgens Skin Ointment are indicated in for all skin disorders,
+                                        Pruritus, etc. Very effective in eczema and scabies.
+                                    </p>
+                                    <ul class="social-icon">
+                                        <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                            onclick="prodModal('PRICE : 100 PKR' , 'BBP Skin Ointment' , 'assets/images/skn1.jpg', '<ul><li> <b>Primary Benefits :</b></li> <li> Bangalore Bio-Plasgens Skin Ointment are indicated in for all skin disorders, Pruritus, etc. Very effective in eczema and scabies.</li><li><b>Direction Of USE</b></li><li>Wash the affected part with warm water and apply the ointment</li></ul>')">Details</button>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn2.jpg" alt="">
+                                <h2 class="pp">BBP Allergol Tablets</h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">BBP Allergol Tablets</h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Introduction: Skin, an extensive organ of human body is repeatedly exposed to a
+                                    highly polluted environment, Commonest pollutants and toxic substances include dust,
+                                    detergent soaps, cosmetics.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , 'BBP Allergol Tablets' , 'assets/images/skn2.jpg', ' <ul><li> <b>Introduction</b></li> <li> Skin, an extensive organ of human body is repeatedly exposed to a highly polluted environment, Commonest pollutants and toxic substances include dust, detergent soaps, cosmetics, plant substance, radiation rays etc, which are also sensitive on skin. People who have sensitive skin are prone for allergy which shows itself by Redness, Eruptions, Unusual Dryness of Skin, Scaling etc.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn3.jpg" alt="">
+                                <h2 class="pp">Neem Clean Soap</h2>
+                                <h5 class="pp1">PRICE : 220 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Neem Clean Soap</h2>
+                                <h5 class="p1">PRICE : 220 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Neem helps keep away skin related problems like pimples and acne very effectively,
+                                    keeping your skin fresh and beautiful.Natural Skin care soap for protect from heat
+                                    and light.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 220 PKR' , 'Neem Clean Soap' , 'assets/images/skn3.jpg', ' <ul><li> <b>ABOUT :</b></li> <li>Neem Clean Soap for Natural Skin. Natural skin care soap with Neem and Amla extracts for an unblemished skin.Neem helps keep away skin related problems like pimples and acne very effectively, keeping your skin fresh and beautiful.Natural Skin care soap for protect from heat and light.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn4.jpg" alt="">
+                                <h2 class="pp">Sulphur Ointment</h2>
+                                <h5 class="pp1">PRICE : 150 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Sulphur Ointment</h2>
+                                <h5 class="p1">PRICE : 150 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Wheezal Sulphur Ointment is a Homeopathic medicine for Itching & skin infections
+                                    Wheezal Sulphur Ointment Range of action
+                                    Itching
+                                    Skin Infections .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 150 PKR' , 'Sulphur Ointment' , 'assets/images/skn4.jpg', '<ul><li>ABOUT :</li><li>Wheezal Sulphur Ointment is a Homeopathic medicine for Itching & skin infectionsWheezal Sulphur Ointment  Range of actionItchingSkin Infections</li><li>APLICATION :</li><li>Apply on affected area or as directed by physician</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn5.jpg" alt="">
+                                <h2 class="pp">Apium Graveolens</h2>
+                                <h5 class="pp1">PRICE : 200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Apium Graveolens</h2>
+                                <h5 class="p1">PRICE : 200 PKR</h5>
+
+
+                                <p class="des">
+                                    Unpleasant feeling in the stomach along with heartburn. All gone feeling in the
+                                    stomach. Retention of urine. Unable to sit still, keeps fidgeting. Cannot stop from
+                                    thinking.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 200 PKR' , 'Apium Graveolens' , 'assets/images/skn5.jpg', '<ul><li> <b>ABOUT :</b></li> <li>Unpleasant feeling in the stomach along with heartburn. All gone feeling in the stomach. Retention of urine. Unable to sit still, keeps fidgeting. Cannot stop from thinking. A dull pain in lower back made worse by lying down and better when moving about. Sensation as if both eyes were pushed inwards. Severe throbbing headaches especially of the left side made worse by slightest motion and better by rest.</li><li><b>HEAD :</b></li><li>Pain in forehead worse during night. Dull pain in right side of forehead. Throbbing pain worse by expiring through nose. Headaches better by eating, in open air and by closing eyes. Better by complete rest, by drinking cold water; and by hot compresses. Worse by motion, by light and by exertion.</li><li><b>NOSE :</b></li><li>Tough discharge from nose. Nostrils stuffed</li><li><b>MOUTH</b></li><li> Dull and sore pain on upper and lower teeth. Toothache better by cold water.</li><li><b>STOMACH</b></li><li> Unpleasant feeling at stomach with belching. Desires oranges and oatmeal.</li><li><b>NECK & BACK</b></li><li> Pain in muscles of back of neck worse by motion, and by pressure. Dull pain in lower back with pain in abdomen. Pain better by motion.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skin.jpg" alt="">
+                                <h2 class="pp">Frankincense Touch</h2>
+                                <h5 class="pp1">PRICE : 5000 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Frankincense Touch</h2>
+                                <h5 class="p1">PRICE : 5000 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    doTERRA Frankincense Touch provides the renowned benefits of Frankincense essential
+                                    oil in a convenient roll-on applicator. Combined with Fractionated Coconut Oil,
+                                    Frankincense Touch .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 5000 PKR' , 'Frankincense Touch' , 'assets/images/skin.jpg', ' <ul<li> <b>Primary Benefits :</b></li>li></li> <li>Promotes feelings of relaxation when applied topically.</li><li>Helps reduce the appearance of skin imperfections.</li> <li>Rejuvenating and soothing to the skin.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/trend1.jpg" alt="">
+                                <h2 class="pp">Thuja 30C</h2>
+                                <h5 class="pp1">PRICE : 3200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Thuja 30C</h2>
+                                <h5 class="p1">PRICE : 3200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Thuja, Thuja Occidentalis , is a homeopathic remedy indicated for
+                                    wart-like formations on skin and mucous membranes,
+                                    bedwetting, dry, split hair, white, scaly dandruff, persistent skin problems.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3200 PKR' , 'Thuja 30C' , 'assets/images/trend1.jpg', 'Size: 12g medicated sucrose pillules <ul><li> Cough,1 Remedy for Warts</li> <li>Warts, Skin Tags</li><li>Discharges Yellow – Green</li><li>Oily Skin</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skin1.jpg" alt="">
+                                <h2 class="pp">Deep Blue Rub</h2>
+                                <h5 class="pp1">PRICE : 3000 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Deep Blue Rub</h2>
+                                <h5 class="p1">PRICE : 3000 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    doTERRA® Deep Blue Rub is a rich, topical cream infused with the Deep Blue Soothing
+                                    Blend of CPTG® essential oils for natural and effective relief for joint and muscle
+                                    aches. Formulated
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3000 PKR' , 'Deep Blue Rub' , 'assets/images/skin1.jpg', '<ul><li> <b>Primary Benefits :</b></li> <li>Formulated with the Deep Blue proprietary blend of essential oils and other powerful ingredients.</li> <li>Perfect for the athlete in your life, Deep Blue Rub is blended in a base of moisturizing emollients that leaves your skin soft and non-greasy.</li><li></li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn6.jpg" alt="">
+                                <h2 class="pp">Aloevera Skin Gel</h2>
+                                <h5 class="pp1">PRICE : 200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Aloevera Skin Gel</h2>
+                                <h5 class="p1">PRICE : 200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Aloe Vera helps with sunburn through its powerful healing activity, acts as a
+                                    protective layer on the skin, and helps replenish its moisture.
+
+                                    Aloe moisturizes the skin without giving it a greasy feel, so it's perfect for
+                                    anyone .
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 200 PKR' , 'Aloevera Skin Gel ' , 'assets/images/skn6.jpg', '<ul><li><b>Primary Benefits :</b></li> <li>Bakson Sunny Aloe vera Skin Gel has an action on the cleansing of the skin.Bakson Sunny Aloe vera Skin Gel provides a healthy, clean complexion, fights back pimples.It helps to make your skin look firm and minimizes the appearance of dark spots.Bakson Sunny Aloe vera Skin Gel is useful for dry skin and acne scars.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn7.jpg" alt="">
+                                <h2 class="pp">Skin Toner for face</h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Skin Toner for face</h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Skin Toner with aloe vera, neem and tulsi is an effective toner which helps in
+                                    removing excess dirt, traces of oil and makeup. It is quite helpful in maintaining
+                                    the pH balance of the skin and also helps to control acne eruptions.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , 'Skin Toner for face' , 'assets/images/skn7.jpg', ' <ul><li> <b>USES :</b></li>Cleanses Skin<li></li> <li>hydrates skin</li><li>exfoliates dead skin</li> <li>controls acne</li><li>Removes excess dirt0</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn8.jpg" alt="">
+                                <h2 class="pp">Topi Azadirachta</h2>
+                                <h5 class="pp1">PRICE : 200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Topi Azadirachta</h2>
+                                <h5 class="p1">PRICE : 200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Schwabe Topi Azadirachta Cream is indicated for skin diseases like boils, ulcers,
+                                    itching, eczema, scabies, burning, leprosy, pigmentation abnormalities.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 200 PKR' , 'Topi Azadirachta' , 'assets/images/skn8.jpg', '<ul><li> <b>ABOUT :</b></li> <li>Schwabe Topi Azadirachta Cream is indicated for skin diseases like boils, ulcers, itching, eczema, scabies, burning, leprosy, pigmentation abnormalities.</li><li>Azadirachta indica commonly known as Neem has anti-inflammatory</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skn9.jpg" alt="">
+                                <h2 class="pp">109 Blood Purifier </h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">109 Blood Purifier </h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Lords L 109 Blood Purifier Drops is indicated for impurities in blood.
+
+                                    Lords L 109 Blood Purifier Drops helps to purify the blood on account of diseases,
+                                    It treats pimples in young boys and girls at their pu
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , '109 Blood Purifier Drops ' , 'assets/images/skn9.jpg', '<ul><li><b>ABOUT :</b></li> <li>Lords L 109 Blood Purifier Drops is indicated for impurities in blood.</li> <li>Lords L 109 Blood Purifier Drops helps to purify the blood on account of diseases, It treats pimples in young boys and girls at their pu</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+
+
+
+                <div class="row">
+
+
+
+
+                    <div class="column">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="assets/images/skn10.jpg" alt="">
+                                    <h2 class="pp">Biocombination 20</h2>
+                                    <h5 class="pp1">PRICE : 200 PKR</h5>
+                                </div>
+                                <div class="back from-left">
+                                    <h2 class="p">Biocombination 20</h2>
+                                    <h5 class="p1">PRICE : 200 PKR</h5>
+                                    <h3>Hoemeopathic</h3>
+
+                                    <p class="des">
+                                        SBL Bio Combination No 20 Tablets for Skin Diseases is indications for Acne,
+                                        chaps and cracks, whitlow, eczema, eruptions on the scalp, seborrhoea,
+                                        psoriasis, herpes, and similar eruptive
+                                    </p>
+                                    <ul class="social-icon">
+                                        <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                            onclick="prodModal('PRICE : 200 PKR' , 'Biocombination 20' , 'assets/images/skn10.jpg', ' <ul><li> <b>ABOUT :</b></li><li>SBL Bio Combination No 20 Tablets for Skin Diseases is indications for Acne, chaps and cracks, whitlow, eczema, eruptions on the scalp, seborrhoea,psoriasis, herpes, and similar eruptive</li><li><b>INDICATION:</b></li><li>Acne, cracks, whitlow</li> <li>Eczema due to uterine disorders</li><li>Scurfy eruptions on the scalp and faces of the children</li><li>Psoriasis, herpes, similar eruptive diseases.</li></ul>')">Details</button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="few2">
+            <div id="few1">
+                <div id="few">
+                    <h2>
+                        Karachi's Original Health & Wellness Centre
+                    </h2>
+                    <h4>• Clinic • Shop </h4>
+                    <p>Come visit our natural healthcare clinic for consultations with leading nutritionists
+                        and functional medicine practitioners who combine the best of Eastern and Western
+                        natural medicine to address the root cause of illness. Shop for high quality
+                        supplements, books, candles, water filters, essential oils and products to support a
+                        clean and natural lifestyle.</p>
+                    <p>Balanced Living is based above The Living Café, one of the first raw food cafes in
+                        Singapore.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer id="wr">
+
+
+
+
+
+        <div id="ftr">
+
+            <div id="ftr1">
+
+                <div id="ftr2">
+                    <div class="ftc">
+
+                        <li class="tp" onclick="home()">Clinic </li>
+                        <li onclick="neww()">Shop </li>
+                        <li onclick="con()">Shipping & Returns </li>
+                        <li onclick="con()">Contact US </li>
+
+
+                    </div>
+                    <div class="ftc">
+
+                        <p><img src="assets/logo/download.jfif" alt=""></p>
+                        <span onclick="fab()"><i class="fab fa-facebook fk"></i></span>
+                        <span onclick="insta"><i class="fab fa-instagram fk"></i></span>
+                        <span onclick="wats"><i class="fab fa-whatsapp-square fk"></i></span>
+
+                    </div>
+                    <div class="ftc">
+                        <li class="tp" onclick="neww()"> How To Shop</li>
+                        <li onclick="con()">Payment Method</li>
+                        <li onclick="con()">Return policy</li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fl">
+            <div id="fl1">
+                <span>©2021 Rehan Homeopathic</span>
+                <span><i class="fas fa-phone-alt"></i> +923477276126</span>
+                <span>midreeskhan7276@gmail <i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>

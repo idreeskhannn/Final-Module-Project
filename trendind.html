@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trend</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon" href="assets/logo/download.jfif">
+
+</head>
+
+<body>
+
+    <section class="modal fade bn" id="productModal">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+                                <div class="in">
+                                    <input type="email" placeholder="Email" id="email">
+
+                                </div>
+                                <p id="p2" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder="Password" id="pass">
+                                    <span class="fas fa-lock" onclick="show(this)"></span>
+                                </div>
+                                <p id="p3" class="p"></p>
+                                <div class="in">
+                                    <input type="password" placeholder="Re-Type Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-toggle="modal" data-target="#login">Existing User / login</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <button data-toggle="modal" data-target="#productModal"> ss</button> -->
+
+    <section class="modal  bn" id="login">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder=" Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-dismiss="modal">Create New Account / SignUp</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header>
+        <!-- <div class="h">
+            <h4> Same day deliver, order before 4pm </h4>
+        </div> -->
+        <div class="h1">
+            <h6>Want to talk to us? We are happy to serve you. (9AM to 9PM, Monday to Saturday) </h6>
+        </div>
+
+        <div>
+
+            <div>
+                <nav class="navbar navbar-expand-lg  badge-light nvc   ">
+                    <a class="navbar-brand k" href="#"><img src="assets/logo/download.jfif" id="jh" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:void(0) " onclick="home()">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="abt()">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:void(0)">Trending</a>
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="skin()">SKIN</a>
+
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="brt()">BREATHE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="con()">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0"
+                            style="list-style: none; margin-right: 20px; font-size: 30px; cursor: pointer;">
+                            <li data-toggle="modal" data-target="#productModal"><i class="fas fa-user"></i>
+                            <li>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="sc">
+
+
+
+
+
+
+
+
+        <div id="dl">
+
+            <div id="dl1">
+                <div id="kh">
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="hh">
+            <h3>Rehan Online Pharmacy, Pakistan's Most Trusted</h3>
+        </div>
+
+
+
+
+        <section class="modal fade" id="Detail">
+            <div class="modal-dialog myModal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h6>product </h6>
+                    </header>
+                    <section class="modal-body">
+
+                        <div class="row">
+                            <section class="col-lg-6 bor">
+                                <img id="modalImg" src="" width="100%" alt="">
+                            </section>
+                            <section class="col-lg-6 bor1">
+                                <p id="modalName"></p>
+                                <p id="modalPrice"></p>
+                                <p id="modalDs"></p>
+                                <button class="btn btn-success bm   ">ADD TO CARD</button>
+                            </section>
+                        </div>
+                    </section>
+                    <footer class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-danger">close</button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <h3 id="jk">Trending</h3>
+
+
+            <div class="row">
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/tbl.png" alt="">
+                                <h2 class="pp">Alpha CF</h2>
+                                <h5 class="pp1">PRICE : 350 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Alpha CF/h2>
+                                    <h5 class="p1">PRICE : 350 PKR</h5>
+
+
+                                    <p class="des">
+                                        Aconitum napellus 3x 25 mg: Coryza much sneezing, Red, dry, constricted, numb,
+                                        prickling, burning, stinging, Cough, dry, short, hacking.Bryonia alba 3x 25 mg:
+                                        Dryness, sticking on swallowing, scraped and constricted.
+                                    </p>
+                                    <ul class="social-icon">
+                                        <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                            onclick="prodModal('PRICE : 350 PKR' , 'Alpha CF' , 'assets/images/tbl.png', '<ul><li> <b>Primary Benefits :</b></li> <li> For prompt relief from cold & flu</li><li>Effective in influenza (flu), headache & body ache</li><li>Controls profuse expectoration of thin watery discharge, coryza and irritative cough</li><li>Helps overcome physical and mental restlessness and feeling of weakness</li><li>Gives a sense of well-being</li></ul>')">Details</button>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/trend.jpg" alt="">
+                                <h2 class="pp">Phosphorus 30C</h2>
+                                <h5 class="pp1">PRICE : 3800 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Phosphorus 30C</h2>
+                                <h5 class="p1">PRICE : 3800 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Phosphorus is commonly for irritating coughs and sore throats. Pains may be burning
+                                    with a desire to sip cold drinks. Very sensitive to all impressions, the senses may
+                                    become very acute and they may have many fears.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3800 PKR' , 'Phosphorus 30C' , 'assets/images/trend.jpg', 'Size: 12g medicated sucrose pillules  <ul><li> Cough, Dry and Hard and Recurring Respiratory Tract Infections</li> <li>Nosebleeds or Cuts that Bleed Bright Red</li><li>Loose Stool, Morning, Profuse, Watery</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/trend1.jpg" alt="">
+                                <h2 class="pp">Thuja 30C</h2>
+                                <h5 class="pp1">PRICE : 3200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Thuja 30C</h2>
+                                <h5 class="p1">PRICE : 3200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Thuja, Thuja Occidentalis , is a homeopathic remedy indicated for
+                                    wart-like formations on skin and mucous membranes,
+                                    bedwetting, dry, split hair, white, scaly dandruff, persistent skin problems.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3200 PKR' , 'Thuja 30C' , 'assets/images/trend1.jpg', 'Size: 12g medicated sucrose pillules <ul><li> Cough,1 Remedy for Warts</li> <li>Warts, Skin Tags</li><li>Discharges Yellow – Green</li><li>Oily Skin</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/trend3.png" alt="">
+                                <h2 class="pp">D3 Gold QUANTUM</h2>
+                                <h5 class="pp1">PRICE : 3100 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">D3 Gold QUANTUM</h2>
+                                <h5 class="p1">PRICE : 3100 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Quantum D3 provides live-source vitamin D3 in liquid form. Vitamin D3 is a
+                                    fat-soluble vitamin called the “Sunshine Vitamin” which is essential for bone
+                                    growth, mineralization and absorption of calcium.
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3100 PKR' , 'D3 Gold QUANTUM' , 'assets/images/trend3.png', 'Quantum D3 provides live-source vitamin D3 in liquid form. Vitamin D3 is a fat-soluble vitamin called the “Sunshine Vitamin” which is essential for bone growth, mineralization and absorption of calcium. Adequate levels of vitamin D also support cardiovascular health.Maintaining healthy vitamin D levels is essential throughout all stages of your life.New, exciting research shows that this little powerhouse vitamin has more newly discovered functions. Did you know that vitamin D receptors are found in countless tissues throughout the entire body? That can only mean that vitamin D has a much greater impact on the body’s health than has been previously thought. Eye-opening research shows that our immune cells also have vitamin D receptors. This reveals how adequate vitamin D levels may be critically important is to our immune system health as well.Although sunlight exposure on the skin stimulates vitamin D production, many people simply can’t achieve the vitamin D levels they need. Thus, taking a high quality vitamin D supplement can make good sense for supporting optimal health. Recent studies propose ideal vitamin D3 intake should be 1,000 IU or more daily (a recommendation our liquid meets in just one drop).')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/flu1.jpg" alt="">
+                                <h2 class="pp">Glycyrrhiza glabra</h2>
+                                <h5 class="pp1">PRICE : 1400 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Glycyrrhiza glabra</h2>
+                                <h5 class="p1">PRICE : 1400 PKR</h5>
+
+
+                                <p class="des">
+                                    In view of the above, many homoeopaths & institutes have given a fresh look to
+                                    it. It has been found useful in irritating cough, strengthening throat, lowers
+                                    internal inflammation, covers sore throat. It counters cold, catarrh, cough and
+                                    bronchitis.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3200 PKR' , 'Glycyrrhiza glabra' , 'assets/images/brt1.jpg', '<ul><li> <b>Primary Benefits :</b></li> <li> In view of the above, many homoeopaths & institutes have given a fresh look to it. It has been found useful in irritating cough, strengthening throat, lowers internal inflammation, covers sore throat. It counters cold, catarrh, cough and bronchitis. Proved by Berridge, Nom, Physician V, 9, 62; Thomas Lindsley Bradford. In some cases it has tonic effect especially in aged males, who also reported benefits in prostatic problems and polyuria. Glycyrrhizin is reported to stimulate production of hormones by the adrenal glands and reduces the breakdown of steroids by liver & kidneys.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skin.jpg" alt="">
+                                <h2 class="pp">Frankincense Touch</h2>
+                                <h5 class="pp1">PRICE : 5000 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Frankincense Touch</h2>
+                                <h5 class="p1">PRICE : 5000 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    doTERRA Frankincense Touch provides the renowned benefits of Frankincense essential
+                                    oil in a convenient roll-on applicator. Combined with Fractionated Coconut Oil,
+                                    Frankincense Touch .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 5000 PKR' , 'Frankincense Touch' , 'assets/images/skin.jpg', ' <ul<li> <b>Primary Benefits :</b></li>li></li> <li>Promotes feelings of relaxation when applied topically.</li><li>Helps reduce the appearance of skin imperfections.</li> <li>Rejuvenating and soothing to the skin.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/trend1.jpg" alt="">
+                                <h2 class="pp">Thuja 30C</h2>
+                                <h5 class="pp1">PRICE : 3200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Thuja 30C</h2>
+                                <h5 class="p1">PRICE : 3200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Thuja, Thuja Occidentalis , is a homeopathic remedy indicated for
+                                    wart-like formations on skin and mucous membranes,
+                                    bedwetting, dry, split hair, white, scaly dandruff, persistent skin problems.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3200 PKR' , 'Thuja 30C' , 'assets/images/trend1.jpg', 'Size: 12g medicated sucrose pillules <ul><li> Cough,1 Remedy for Warts</li> <li>Warts, Skin Tags</li><li>Discharges Yellow – Green</li><li>Oily Skin</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/skin1.jpg" alt="">
+                                <h2 class="pp">Deep Blue Rub</h2>
+                                <h5 class="pp1">PRICE : 3000 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Deep Blue Rub</h2>
+                                <h5 class="p1">PRICE : 3000 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    doTERRA® Deep Blue Rub is a rich, topical cream infused with the Deep Blue Soothing
+                                    Blend of CPTG® essential oils for natural and effective relief for joint and muscle
+                                    aches. Formulated
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3000 PKR' , 'Deep Blue Rub' , 'assets/images/skin1.jpg', '<ul><li> <b>Primary Benefits :</b></li> <li>Formulated with the Deep Blue proprietary blend of essential oils and other powerful ingredients.</li> <li>Perfect for the athlete in your life, Deep Blue Rub is blended in a base of moisturizing emollients that leaves your skin soft and non-greasy.</li><li></li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/flu2.jpg" alt="">
+                                <h2 class="pp">Bomapect Cough</h2>
+                                <h5 class="pp1">PRICE : 1600 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Bomapect Cough</h2>
+                                <h5 class="p1">PRICE : 1600 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Adheres to European GMP Standards, Mfg in technical cooperation with
+                                    Hevert-Arzneimittel, Germany EU GMP. Bomapect Cough K3 Drops is indicated for
+                                    Cough due to cold and Bronchial Disease.
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 1600 PKR' , 'Bomapect Cough ' , 'assets/images/flu2.jpg', '<ul><li><b>Primary Benefits :</b></li> <li>Adheres to European GMP Standards, Mfg  in technical cooperation with Hevert-Arzneimittel, Germany EU GMP. Bomapect Cough K3 Drops is indicated for Cough due to cold and Bronchial Disease.Adheres to European GMP Standards, Mfg  in technical cooperation with Hevert-Arzneimittel, Germany EU GMP. Bomapect Cough K3 Drops is indicated for Cough due to cold and Bronchial Disease.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt.jpg" alt="">
+                                <h2 class="pp">Breathe</h2>
+                                <h5 class="pp1">PRICE : 3000 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Breathe</h2>
+                                <h5 class="p1">PRICE : 3000 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    doTERRA Breathe is a remarkable blend of essential oils including Laurel Leaf,
+                                    Peppermint, Eucalyptus, Melaleuca, Lemon, Cardamom, Ravintsara, and Ravensara.
+                                    doTERRA Breathe
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3000 PKR' , 'Breathe' , 'assets/images/brt.jpg', ' <ul><li> <b>Primary Benefits :</b></li><li></li> <li>Maintains feelings of clear airways and easy breathing..</li><li>Promotes a restful night’s sleep.</li> <li>Helps minimize the effects of seasonal threats.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt1.jpg" alt="">
+                                <h2 class="pp">Breathe Touch</h2>
+                                <h5 class="pp1">PRICE : 2200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Breathe Touch</h2>
+                                <h5 class="p1">PRICE : 2200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Experience the soothing, cooling vapor of doTERRA Breathe essential oil blend, now
+                                    available in a Touch version for gentle and quick application. doTERRA Breathe Touch
+                                    combines .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 3200 PKR' , 'Breathe Touch' , 'assets/images/brt1.jpg', '<ul><li> <b>Primary Benefits :</b></li> <li>Cooling, soothing vapour</li><li>Calming aroma promotes a restful environment</li><li>Helps minimise the effects of seasonal threats</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt2.jpg" alt="">
+                                <h2 class="pp">Eucalyptus</h2>
+                                <h5 class="pp1">PRICE : 2500 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Eucalyptus</h2>
+                                <h5 class="p1">PRICE : 2500 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Eucalyptus trees are tall, evergreen trees that grow up to 50 feet in height and are
+                                    sometimes referred to as Gum Trees. Eucalypus oil offers many topical and aromatic
+                                    benefits as the main chemical.
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 2500 PKR' , 'Eucalyptus ' , 'assets/images/brt2.jpg', '<ul><li><b>Primary Benefits :</b></li> <li>Formulated with the Deep Blue proprietary blend of essential oils and other powerful ingredients.</li> <li>Perfect for the athlete in your life, Deep Blue Rub is blended in a base of moisturizing emollients that leaves your skin soft and non-greasy.</li><li></li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+
+
+
+                <div class="row">
+
+
+
+
+                    <div class="column">
+                        <div class="card">
+                            <div class="content">
+                                <div class="front">
+                                    <img class="profile" width="100%" src="assets/images/flu.jpg" alt="">
+                                    <h2 class="pp">Kali Muriaticum</h2>
+                                    <h5 class="pp1">PRICE : 720 PKR</h5>
+                                </div>
+                                <div class="back from-left">
+                                    <h2 class="p">Kali Muriaticum</h2>
+                                    <h5 class="p1">PRICE : 720 PKR</h5>
+                                    <h3>Hoemeopathic</h3>
+
+                                    <p class="des">
+                                        Schwabe Biochemics Tablets Kali Muriaticum is indicated for Cold with watery
+                                        discharge, Catarrh, Stuffy head cold, Croup, Eczema, Difficulty in digesting
+                                        fatty or rich foods.
+                                    </p>
+                                    <ul class="social-icon">
+                                        <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                            onclick="prodModal('PRICE : 720 PKR' , 'Kali Muriaticum' , 'assets/images/flu.jpg', ' <ul><li> <b>Primary Benefits :</b></li><li>Kali mur is a salt indicated for catarrh conditions and glandular swelling. Kali Mur. is the remedy for sluggish conditions. It combines with the organic substance fibrin. Thus a deficiency of this tissue salt causes fibrin to become non-functional, and to be thrown off in the form of thick, white discharges, giving rise to catarrhs and similar symptoms affecting the skin and mucous membranes. Its action is complementary to that of Calc.</li> </ul>')">Details</button>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="few2">
+            <div id="few1">
+                <div id="few">
+                    <h2>
+                        Karachi's Original Health & Wellness Centre
+                    </h2>
+                    <h4>• Clinic • Shop </h4>
+                    <p>Come visit our natural healthcare clinic for consultations with leading nutritionists
+                        and functional medicine practitioners who combine the best of Eastern and Western
+                        natural medicine to address the root cause of illness. Shop for high quality
+                        supplements, books, candles, water filters, essential oils and products to support a
+                        clean and natural lifestyle.</p>
+                    <p>Balanced Living is based above The Living Café, one of the first raw food cafes in
+                        Singapore.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer id="wr">
+
+
+
+
+
+        <div id="ftr">
+
+            <div id="ftr1">
+
+                <div id="ftr2">
+                    <div class="ftc">
+
+                        <li class="tp" onclick="home()">Clinic </li>
+                        <li onclick="neww()">Shop </li>
+                        <li onclick="con()">Shipping & Returns </li>
+                        <li onclick="con()">Contact US </li>
+
+
+                    </div>
+                    <div class="ftc">
+
+                        <p><img src="assets/logo/download.jfif" alt=""></p>
+                        <span onclick="fab()"><i class="fab fa-facebook fk"></i></span>
+                        <span onclick="insta"><i class="fab fa-instagram fk"></i></span>
+                        <span onclick="wats"><i class="fab fa-whatsapp-square fk"></i></span>
+
+                    </div>
+                    <div class="ftc">
+                        <li class="tp" onclick="neww()"> How To Shop</li>
+                        <li onclick="con()">Payment Method</li>
+                        <li onclick="con()">Return policy</li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fl">
+            <div id="fl1">
+                <span>©2021 Rehan Homeopathic</span>
+                <span><i class="fas fa-phone-alt"></i> +923477276126</span>
+                <span>midreeskhan7276@gmail <i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>

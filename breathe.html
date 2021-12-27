@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon" href="assets/logo/download.jfif">
+
+</head>
+
+<body>
+
+    <section class="modal fade bn" id="productModal">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+                                <div class="in">
+                                    <input type="email" placeholder="Email" id="email">
+
+                                </div>
+                                <p id="p2" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder="Password" id="pass">
+                                    <span class="fas fa-lock" onclick="show(this)"></span>
+                                </div>
+                                <p id="p3" class="p"></p>
+                                <div class="in">
+                                    <input type="password" placeholder="Re-Type Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-toggle="modal" data-target="#login">Existing User / login</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <button data-toggle="modal" data-target="#productModal"> ss</button> -->
+
+    <section class="modal  bn" id="login">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder=" Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-dismiss="modal">Create New Account / SignUp</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header>
+        <!-- <div class="h">
+            <h4> Same day deliver, order before 4pm </h4>
+        </div> -->
+        <div class="h1">
+            <h6>Want to talk to us? We are happy to serve you. (9AM to 9PM, Monday to Saturday) </h6>
+        </div>
+
+        <div>
+
+            <div>
+                <nav class="navbar navbar-expand-lg  badge-light nvc   ">
+                    <a class="navbar-brand k" href="#"><img src="assets/logo/download.jfif" id="jh" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:void(0) " onclick="home()">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="abt()">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="neww()">Trending</a>
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="skin()">SKIN</a>
+
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="brt()">BREATHE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="con()">Contact</a>
+                            </li>
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0"
+                            style="list-style: none; margin-right: 20px; font-size: 30px; cursor: pointer;">
+                            <li data-toggle="modal" data-target="#productModal"><i class="fas fa-user"></i>
+                            <li>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="sc">
+
+
+
+
+
+
+
+
+        <div id="dl">
+
+            <div id="dl1">
+                <div id="kh">
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="gh">
+                        <div>
+                            <span><i class="fas fa-shipping-fast me"></i></span>
+                        </div>
+
+                        <div>
+                            <h5>
+                                Free Shipping
+                            </h5>
+                            <p>
+                                on ALL orders above PKR : 500
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="hh">
+            <h3>Rehan Online Pharmacy, Pakistan's Most Trusted</h3>
+        </div>
+
+
+
+
+        <section class="modal fade" id="Detail">
+            <div class="modal-dialog myModal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h6>product </h6>
+                    </header>
+                    <section class="modal-body">
+
+                        <div class="row">
+                            <section class="col-lg-6 bor">
+                                <img id="modalImg" src="" width="100%" alt="">
+                            </section>
+                            <section class="col-lg-6 bor1">
+                                <p id="modalName"></p>
+                                <p id="modalPrice"></p>
+                                <p id="modalDs"></p>
+                                <button class="btn btn-success bm   ">ADD TO CARD</button>
+                            </section>
+                        </div>
+                    </section>
+                    <footer class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-danger">close</button>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <h3 id="jk">FOR BREATHE</h3>
+
+
+            <div class="row">
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt.png" alt="">
+                                <h2 class="pp"> Camphora 1M </h2>
+                                <h5 class="pp1">PRICE : 150 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p"> Camphora 1M </h2>
+                                <h5 class="p1">PRICE : 150 PKR</h5>
+
+
+                                <p class="des">
+                                    Camphora 1M medicated globules are very useful for strong immunity in cases of
+                                    respiratory infections. They are a treatment of choice in cases of difficult or
+                                    laboured breathing (Suffocative Dyspnoea), Asthma or Suspended Respiration.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 150 PKR' , ' Camphora 1M ' , 'assets/images/brt.png', '<ul><li> <b>ABOUT :</b></li> <li> Camphora 1M medicated globules are very useful for strong immunity in cases of respiratory infections. They are a treatment of choice in cases ofdifficult or laboured breathing (Suffocative Dyspnoea), Asthma or Suspended Respiration.</li><li><b>Indication</b></li><li>Acute complaints with anxiety and extreme fear</li><li>Loss of consciousness. Confusion of ideas; delirium</li><li>Great anguish and discouragement</li><li>Nose stopped; sneezing, breathe cold</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt4.jpg" alt="">
+                                <h2 class="pp">WL 45 Anti Snoring</h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">WL 45 Anti Snoring</h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Wheezal WL45 Anti Snoring Drops helps to reduce snoring caused by the vibration
+                                    activity in the throat.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , 'WL 45 Anti Snoring' , 'assets/images/brt4.jpg', ' <ul><li> <b>ABOUT</b></li> <li>Wheezal WL45 Anti Snoring Drops helps to reduce snoring caused by the vibration activity in the throat </li><li><b>Indication</b></li><li>For problems of Snoring. Obstructed breathing at night time is relieved. Snoring may be a sign of obstructive sleep apnea also.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt5.jpg" alt="">
+                                <h2 class="pp">Aconitum Ferox</h2>
+                                <h5 class="pp1">PRICE : 220 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Aconitum Ferox</h2>
+                                <h5 class="p1">PRICE : 220 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Aconitum ferox is a homeopathic medicine and is also known as Aconitum virorum and
+                                    Indian Aconite. It is used in treatment of gastralgia, burning pains of arthritis,
+                                    dyspnoea, numbness etc
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 220 PKR' , 'Neem Clean Soap' , 'assets/images/brt5.jpg', ' <ul><li> <b>ABOUT :</b></li> <li>Aconitum ferox is a homeopathic medicine and is also known as Aconitum virorum and Indian Aconite. It is used in treatment of gastralgia, burning pains of arthritis, dyspnoea, numbness etcIt is reported to be useful in neuralgia, gastralgia, and dyspnoea.It is indicated in anxiety and fear of suffocation from paralysis of respiratory muscles. Obliged to breathe half-sitting up with head resting on palms of hands. Formication spread over whole body, least noticeable on parts that had been cold</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt6.jpg" alt="">
+                                <h2 class="pp">Astha Aid Syrup</h2>
+                                <h5 class="pp1">PRICE : 800 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Astha Aid Syrup </h2>
+                                <h5 class="p1">PRICE : 800 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Baksons Astha Aid helps you breathe easier by decreasing the intensity, frequency,
+                                    and duration of the attack. It also improves body resistance. Astha Aid is an ideal
+                                    soother for throat irritated by suffocating .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 800 PKR' , 'Astha Aid Syrup' , 'assets/images/brt6.jpg', '<ul><li>ABOUT :</li><li>Baksons Astha Aid helps you breathe easier by decreasing the intensity, frequency, and duration of the attack. It also improves body resistance.Astha Aid is an ideal soother for throat irritated by suffocating and dry paroxysmal, whooping type of cough.</li><li>Controls cough (dry, whooping, paroxysmal)</li><li>Dilates bronchi and thereby clears the airways for ease of breathing</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="container">
+
+
+
+            <div class="row">
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt7.jpg" alt="">
+                                <h2 class="pp"> D9 Snore Relief</h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">D9 Snore Relief</h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+
+
+                                <p class="des">
+                                    Doliosis D9 Snore Relief Drops helps to relieve symptoms of snoring and congestion
+                                    of nasal passage. It helps you to breathe well and sleep peacefully without any
+                                    stress.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , 'D9 Snore Relief' , 'assets/images/brt7.jpg', '<ul><li> <b>ABOUT :</b></li> <li>Doliosis D9 Snore Relief Drops helps to relieve symptoms of snoring and congestion of nasal passage. It helps you to breathe well and sleeppeacefully without any stress.</li><li><b>Indication</b></li><li>  </li><li>It is helpful in snoring caused by the vibration activity in the throat.</li><li>Obstructed breathing at night time is relieved.</li><li>Noisy breathing during sleep</li><li>Poor nights sleep, sleepiness during the day, at work, or while driving, and fatigue </li><li>Breathing through the mouth instead of the nose.</li><li>Breathing through the mouth instead of the nose. </li>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt8.jpg" alt="">
+                                <h2 class="pp">Astha Aid Drops</h2>
+                                <h5 class="pp1">PRICE : 600 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Astha Aid Drops</h2>
+                                <h5 class="p1">PRICE : 600 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Baksons Astha Aid Drops is a safe homeopathic medicine to relieve breathing
+                                    discomfort and improve resistance to fight recurrences of such attacks on airways.
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 600 PKR' , 'Astha Aid Drops' , 'assets/images/brt8.jpg', ' <ul<li> <b>about :</b></li> <li>Baksons Astha Aid Drops is a safe homeopathic medicine to relieve breathing discomfort and improve resistance to fight recurrences of such attackson airways.Introduction: Some people have difficulty breathing when they get a cold or because of occasional bouts of acute Sinusitis which can make it difficultto breathe until the inflammation subsides and the congested sinuses begin to drain. Chronic or long-term breathing problems include ChronicSinusitis, COPD, allergies, and asthma.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt9.jpg" alt="">
+                                <h2 class="pp">Nosoline Drops</h2>
+                                <h5 class="pp1">PRICE : 200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Nosoline Drops</h2>
+                                <h5 class="p1">PRICE : 200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Wheezal Nosoline Nasal Drops contain purely natural ingredients. The drops provide
+                                    relief from nasal dryness and obstruction, allergy due to dust or mites or
+                                    environmental pollutants, nasal polyps, paranasal sinusitis .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 200 PKR' , 'Nosoline Drops' , 'assets/images/brt9.jpg', '<ul><li> <b>About :</b></li> <li>Wheezal Nosoline Nasal Drops contain purely natural ingredients. The drops provide relief from nasal dryness and obstruction, allergy due to dust ormites or environmental pollutants, nasal polyps, paranasal sinusitis, and allergic vasomotor rhinitis.</li><li><b>Indication :</b></li><li>Nasal dryness & obstruction</li><li>Other Indications</li><li>Nasal Polyps</li><li>Allergy due to dust, mites or environmental pollutants</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt10.jpg" alt="">
+                                <h2 class="pp"> Nasaltone </h2>
+                                <h5 class="pp1">PRICE : 300 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p"> Nasaltone</h2>
+                                <h5 class="p1">PRICE : 300 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Medisynth Nasaltone relief from cold
+                                    and flu.Nasaltone is a non-drowsy, safe and gentle homeopathic formula for the
+                                    treatment of
+                                    dust and pollen allergies, fever, headache, cold and flu.
+
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 300 PKR' , 'Nasaltone' , 'assets/images/brt10.jpg', '<ul><li> <b>About :</b></li> <li>Medisynth Nasaltone Tablets is a homeopathic medicine for allergy, relief from cold and flu.Nasaltone is a non-drowsy, safe and gentle homeopathic formula for the treatment of dust and pollen allergies, fever, headache, cold and flu.</li> <li><b>Indication :</b></li><li>Runny nose, sneezing, watery eyes.</li><li>Sinus congestion (Sinusitis).</li><li>Fever and body ache due to allergies & hay fever.</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+        <div class="container">
+
+
+
+            <div class="row">
+
+
+
+
+                <div class="column">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img class="profile" width="100%" src="assets/images/brt11.jpg" alt="">
+                                <h2 class="pp">Arum Triphyllum</h2>
+                                <h5 class="pp1">PRICE : 200 PKR</h5>
+                            </div>
+                            <div class="back from-left">
+                                <h2 class="p">Arum Triphyllum</h2>
+                                <h5 class="p1">PRICE : 200 PKR</h5>
+                                <h3>Hoemeopathic</h3>
+
+                                <p class="des">
+                                    Arum triphyllum is used for colds and swelling (inflammation) of the throat. It is
+                                    also used to promote sweating and to loosen chest congestion.It is also recommended
+                                    for providing relief from a headache, sore nose .
+                                </p>
+                                <ul class="social-icon">
+                                    <button class="hnb btn btn-info" data-toggle="modal" data-target="#Detail"
+                                        onclick="prodModal('PRICE : 200 PKR' , 'Arum Triphyllum' , 'assets/images/brt11.jpg', ' <ul><li> <b>ABOUT :</b></li><li>Arum triphyllum is used for colds and swelling (inflammation) of the throat. It is also used to promote sweating and to loosen chest congestion.It isalso recommended for providing relief from a headache, sore nose, obstructed nose when one has to breathe through the mouth, bleeding nosealong with mucus, chapped and burning lips, dirty smelling saliva, swollen glands, and red skin with rashes.</li><li><b>INDICATION:</b></li><li>Provides relief from acridity in all its affections</li> <li>Helpful in treating Sore nose with acrid mucous</li><li>Helpful in relieving Swollen glands</li><li>Treats Reddish skin with bloody rashes</li></ul>')">Details</button>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+        </div>
+
+
+        <div id="few2">
+            <div id="few1">
+                <div id="few">
+                    <h2>
+                        Karachi's Original Health & Wellness Centre
+                    </h2>
+                    <h4>• Clinic • Shop </h4>
+                    <p>Come visit our natural healthcare clinic for consultations with leading nutritionists
+                        and functional medicine practitioners who combine the best of Eastern and Western
+                        natural medicine to address the root cause of illness. Shop for high quality
+                        supplements, books, candles, water filters, essential oils and products to support a
+                        clean and natural lifestyle.</p>
+                    <p>Balanced Living is based above The Living Café, one of the first raw food cafes in
+                        Singapore.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <footer id="wr">
+
+
+
+
+
+        <div id="ftr">
+
+            <div id="ftr1">
+
+                <div id="ftr2">
+                    <div class="ftc">
+
+                        <li class="tp" onclick="home()">Clinic </li>
+                        <li onclick="neww()">Shop </li>
+                        <li onclick="con()">Shipping & Returns </li>
+                        <li onclick="con()">Contact US </li>
+
+
+                    </div>
+                    <div class="ftc">
+
+                        <p><img src="assets/logo/download.jfif" alt=""></p>
+                        <span onclick="fab()"><i class="fab fa-facebook fk"></i></span>
+                        <span onclick="insta"><i class="fab fa-instagram fk"></i></span>
+                        <span onclick="wats"><i class="fab fa-whatsapp-square fk"></i></span>
+
+                    </div>
+                    <div class="ftc">
+                        <li class="tp" onclick="neww()"> How To Shop</li>
+                        <li onclick="con()">Payment Method</li>
+                        <li onclick="con()">Return policy</li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fl">
+            <div id="fl1">
+                <span>©2021 Rehan Homeopathic</span>
+                <span><i class="fas fa-phone-alt"></i> +923477276126</span>
+                <span>midreeskhan7276@gmail <i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>

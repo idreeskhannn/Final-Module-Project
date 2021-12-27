@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon" href="assets/logo/download.jfif">
+</head>
+
+<body>
+
+    <section class="modal fade bn" id="productModal">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+                                <div class="in">
+                                    <input type="email" placeholder="Email" id="email">
+
+                                </div>
+                                <p id="p2" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder="Password" id="pass">
+                                    <span class="fas fa-lock" onclick="show(this)"></span>
+                                </div>
+                                <p id="p3" class="p"></p>
+                                <div class="in">
+                                    <input type="password" placeholder="Re-Type Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-toggle="modal" data-target="#login">Existing User / login</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <button > ss</button> -->
+
+    <section class="modal  bn" id="login">
+        <div class="modal-dialog myModal">
+            <div class="modal-content nb">
+                <header class="modal-header">
+                    <h2>SignUp </h2>
+                </header>
+                <form action="#" onsubmit="return validate()">
+                    <section class="modal-body ">
+
+                        <div id="main">
+                            <div id="li">
+
+                                <div class="in">
+                                    <input type="text" placeholder="UserName" id="user">
+
+                                </div>
+                                <p id="p1" class="p"></p>
+
+                                <div class="in">
+                                    <input type="password" placeholder=" Password" id="repass">
+                                    <span class="fas fa-lock" onclick="show1(this)"></span>
+                                </div>
+                                <a href="#" id="lk" data-dismiss="modal">Create New Account / SignUp</a>
+                                <p id="p4" class="p"></p>
+
+                                <input type="submit" value="SUBMIT" class="btn btn-info">
+                            </div>
+                        </div>
+
+                    </section>
+                    <footer class="modal-footer">
+
+                        <button data-dismiss="modal" class="btn btn-light">close</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <header>
+        <!-- <div class="h">
+            <h4> Same day deliver, order before 4pm </h4>
+        </div> -->
+        <div class="h1">
+            <h6>Want to talk to us? We are happy to serve you. (9AM to 9PM, Monday to Saturday) </h6>
+        </div>
+
+        <div>
+
+            <div>
+                <nav class="navbar navbar-expand-lg  badge-light nvc   ">
+                    <a class="navbar-brand k" href="#"><img src="assets/logo/download.jfif" id="jh" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="javascript:void(0)" onclick="home()">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="abt()">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="neww()">Tending</a>
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="skin()">SKIN</a>
+
+                                    <a class="dropdown-item" href="javascript:void(0)" onclick="brt()">BREATHE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="javascript:void(0)" onclick="con()">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0" style="list-style: none; margin-right: 20px; font-size: 30px; cursor: pointer;">
+                            <li data-toggle="modal" data-target="#productModal" ><i class="fas fa-user"></i> <li>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="sd1">
+
+
+        <div>
+            <div id="mapp">
+                <div id="mp">
+                    <div id="mp1">
+                        <div id="mg">
+                            <p id="rhh"><i>Rehan Homeopathic Clinic</i></p>
+                            <hr id="hh">
+                            <p class="df">Nazimabad Sec# 1 Karachi Pakistan</p>
+                            <p class="df">Near( Farooq-e-Azam Masgid )</p>
+                            <p class="gd">Mon-Sat &nbsp; &nbsp; 10AM-1PM</p>
+                            <p class="gd">SUNDAY &nbsp; &nbsp; CLOSE</p>
+                            <p class="gd">+923477276126</p>
+                            <button class="btn btn-success mbx"><a id="bo"
+                                    href="https://www.google.com/maps/place/Farooq-e-Azam+Masjid,+Block+K+North+Nazimabad+Town,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.9490664,67.0502976,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb34086ac51d4e1:0x36a701e0e47833c7!8m2!3d24.9490616!4d67.0524863"><i
+                                        class="fas fa-map-marker-alt"></i> Get Direction</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ft">
+
+            <div id="fd">
+                <div class="bv">
+                    <p> <b> INFORMATION </b></p>
+                    <p class="mp1">For general enquiries midreeskhan7276@gmail.com</p>
+                    <p class="mp1">For clinic enquiries or to book an appointment midreeskhan7276@gmail.com</p>
+                    <p class="mp1">For product or shop related enquiries midreeskhan7276@gmail.com</p>
+                </div>
+                <div class="bv">
+                    <p><b>Contact Us</b></p>
+                    <form action="javascript:void(0)" onsubmit="return false">
+                        <label for="name">Name:*</label><br>
+                        <input type="text" name="name" id="maa" required><br>
+                        <label for="email">Email:*</label><br>
+                        <input type="email" name="email" id="maa" required><br>
+                        <label for="number">Number:*</label><br>
+                        <input type="number" name="number" id="maa" required><br>
+
+                        <label for="area">Meassage:*</label><br>
+                        <textarea name="area" id="a1" cols="40" rows=10" style="background-color:transparent;outline: none; border-radius: 20px;"></textarea>
+                        <br>
+                        <button class="btn btn-primary" onclick="alert('Message sent')">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer id="wr">
+
+
+
+
+
+        <div id="ftr">
+
+            <div id="ftr1">
+
+                <div id="ftr2">
+                    <div class="ftc">
+
+                        <li class="tp" onclick="home()">Clinic </li>
+                        <li onclick="neww()">Shop </li>
+                        <li onclick="con()">Shipping & Returns </li>
+                        <li onclick="con()">Contact US </li>
+
+
+                    </div>
+                    <div class="ftc">
+
+                        <p><img src="assets/logo/download.jfif" alt=""></p>
+                        <span onclick="fab()"><i class="fab fa-facebook fk"></i></span>
+                        <span onclick="insta"><i class="fab fa-instagram fk"></i></span>
+                        <span onclick="wats"><i class="fab fa-whatsapp-square fk"></i></span>
+
+                    </div>
+                    <div class="ftc">
+                        <li class="tp" onclick="neww()"> How To Shop</li>
+                        <li onclick="con()">Payment Method</li>
+                        <li onclick="con()">Return policy</li>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="fl">
+            <div id="fl1">
+                <span>©2021 Rehan Homeopathic</span>
+                <span><i class="fas fa-phone-alt"></i> +923477276126</span>
+                <span>midreeskhan7276@gmail <i class="fas fa-envelope"></i></span>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</html>
